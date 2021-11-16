@@ -1,0 +1,3 @@
+RedisとRedis SentinelをKubernetesに構築するセットです。
+
+フェイルオーバー&スレーブ再構築まで自動でできますが、フェイルオーバーが起こるとStatefulSet内のmasterを担うpodが変わってしまうためKubernetesのサービスリソースが活用できない欠点があります。
